@@ -14,13 +14,14 @@ export default function List() {
                     return (
                         <div className="food" key={index}>
                             <img src={`${food[index]}.png`} className="food-img" alt={`${food[index]}!`}
-                                 width={200} />
+                                 width={200} height={200} />
                             <h4>{element} <br/><br/>- Price : $40</h4>
                         </div>
                     );
                 }) }
 
-            <Link href="/" style={{color: "blue", textDecorationLine: "underline"}}>홈으로</Link>
+            <Link href="/" style={{color: "blue", textDecorationLine: "underline"}}>홈으로</Link> <br/>
+            <Link href="/cart" style={{color: "yellow", textDecorationLine: "underline"}}>장바구니로 이동</Link>
         </div>
 
     )
